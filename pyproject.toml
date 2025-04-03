@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "quantum-machine-learning"
+version = "0.1.0"
+description = "Quantum Research Testing Area"
+authors = ["Pablo Leyva <pleyva2004@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+qiskit = "^0.43.0"
+pennylane = "^0.35.1"
+numpy = ">=1.23.0,<1.25.0"
+scikit-learn = "^1.3.0"
+mpi4py = ">=3.1.4"  
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api" 
